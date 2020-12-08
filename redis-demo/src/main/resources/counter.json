@@ -1,0 +1,102 @@
+{
+  "Counter": [
+    {
+      "ID": "1",
+      "name": "user_login_counter",
+      "description": "user_login",
+      "keyFields": "online_user",
+      "type": "num",
+      "value": "10",
+      "valueCondition": "10",
+      "expireTime": "100"
+    },
+    {
+      "ID": "2",
+      "name": "user_logout_counter",
+      "description": "user_logout",
+      "keyFields": "online_user",
+      "type": "num",
+      "value": "10",
+      "valueCondition": "-1",
+      "expireTime": "10"
+    },
+    {
+      "ID": "3",
+      "name": "user_online_counter",
+      "description": "user_login",
+      "keyFields": "online_user",
+      "type": "num",
+      "value": "10",
+      "expireTime": "10"
+    },
+    {
+      "ID": "4",
+      "name": "user_state_counter",
+      "description": "user_login",
+      "keyFields": "user_state",
+      "type": "string",
+      "valueCondition": "online",
+      "expireTime": "10"
+    },
+    {
+      "ID": "5",
+      "name": "zset_limiting_counter",
+      "description": "user_login_limiting",
+      "keyFields": "zset_limit",
+      "type": "zset",
+      "expireTime": "100",
+      "limit": {
+        "type": "SlideWindow",
+        "intervalTimeOfWindow": 5,
+        "maxsizeOfReq": 2
+      }
+    },
+    {
+      "ID": "6",
+      "name": "list_limiting_counter",
+      "description": "user_login_limiting",
+      "keyFields": "token_bucket",
+      "type": "list",
+      "valueCondition": "-1",
+      "expireTime": "1000",
+      "limit": {
+        "type": "TokenBucket",
+        "intervalTimeOfToken": 1,
+        "maxsizeOfToken": 10
+      }
+    },
+    {
+      "ID": "7",
+      "name": "list_token_counter",
+      "description": "user_login_limiting",
+      "keyFields": "token_bucket",
+      "type": "list",
+      "valueCondition": "1",
+      "expireTime": "1000",
+      "limit": {
+        "type": "TokenBucket",
+        "intervalTimeOfToken": 1,
+        "maxsizeOfToken": 10
+      }
+    },
+    {
+      "ID": "8",
+      "name": "freq_incr_counter",
+      "description": "user_login_freq",
+      "keyFields": "freq_hash",
+      "type": "hash",
+      "valueCondition": "202012071900",
+      "expireTime": "1000",
+      "value": "1"
+    },
+    {
+      "ID": "9",
+      "name": "freq_show_counter",
+      "description": "user_login_freq",
+      "keyFields": "freq_hash",
+      "type": "hash",
+      "valueCondition": "202012071800 202012072300",
+      "expireTime": "1000"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "Action": [
+    {
+      "ID": "1",
+      "name": "user_login_action",
+      "description": "user login",
+      "operateCounter": [
+        {
+          "counterName": "user_login_counter"
+        }
+      ],
+      "showCounter": [
+      ]
+    },
+    {
+      "ID": "2",
+      "name": "user_logout_action",
+      "description": "user login",
+      "operateCounter": [
+        {
+          "counterName": "user_logout_counter"
+        }
+      ],
+      "showCounter": [
+        {
+          "counterName": "user_online_counter"
+        }
+      ]
+    },
+    {
+      "ID": "3",
+      "name": "user_num_action",
+      "description": "user login",
+      "operateCounter": [
+      ],
+      "showCounter": [
+        {
+          "counterName": "user_online_counter"
+        }
+      ]
+    },
+    {
+      "ID": "4",
+      "name": "user_state_action",
+      "description": "user_state",
+      "operateCounter": [
+        {
+          "counterName": "user_state_counter"
+        }
+      ],
+      "showCounter": [
+      ]
+    },
+    {
+      "ID": "5",
+      "name": "zset_limit_action",
+      "description": "zset_limit_action",
+      "operateCounter": [
+        {
+          "counterName": "zset_limiting_counter"
+        }
+      ],
+      "showCounter": [
+      ]
+    },
+    {
+      "ID": "6",
+      "name": "list_limit_action",
+      "description": "list_limit_action",
+      "operateCounter": [
+        {
+          "counterName": "list_limiting_counter"
+        }
+      ],
+      "showCounter": [
+      ]
+    },
+    {
+      "ID": "7",
+      "name": "token_put_action",
+      "description": "put token to list",
+      "operateCounter": [
+        {
+          "counterName": "list_token_counter"
+        }
+      ],
+      "showCounter": [
+      ]
+    },
+    {
+      "ID": "8",
+      "name": "freq_incr_action",
+      "description": "num of query +1",
+      "operateCounter": [
+        {
+          "counterName": "freq_incr_counter"
+        }
+      ],
+      "showCounter": [
+      ]
+    },
+    {
+      "ID": "9",
+      "name": "freq_show_action",
+      "description": "show num of query",
+      "operateCounter": [
+        {
+          "counterName": "freq_show_counter"
+        }
+      ],
+      "showCounter": [
+      ]
+    }
+  ]
+}

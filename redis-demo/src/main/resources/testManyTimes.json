@@ -1,0 +1,37 @@
+{
+  "Test": [
+    {
+      "ID": 1,
+      "name": "slide_window_limit_test",
+      "times": 10,
+      "intervalTime": 1,
+      "action": [
+        {
+          "actionName": "zset_limit_action"
+        }
+      ]
+    },
+    {
+      "ID": 2,
+      "name": "token_bucket_limit_test",
+      "times": 10,
+      "intervalTime": 1,
+      "action": [
+        {
+          "actionName": "list_limit_action"
+        }
+      ]
+    },
+    {
+      "ID": 3,
+      "name": "token_bucket_put_test",
+      "times": 5,
+      "intervalTime": 5,
+      "action": [
+        {
+          "actionName": "token_put_action"
+        }
+      ]
+    }
+  ]
+}
